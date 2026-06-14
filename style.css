@@ -1,0 +1,77 @@
+script.js
+let btn = document.getElementById("theme-btn");
+
+btn.onclick = function(){
+    document.body.classList.toggle("dark");
+}
+body{
+    background-color: lightblue;
+}
+h1{
+    color: red;
+}
+body{
+  margin:0;
+  font-family:Arial, sans-serif;
+  background:#f4f4f4;
+}
+
+header{
+  background:#0066ff;
+  color:white;
+  text-align:center;
+  padding:30px;
+}
+
+nav{
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  background:white;
+  padding:15px;
+}
+
+nav a{
+  text-decoration:none;
+  color:black;
+}
+
+.container{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:20px;
+  padding:20px;
+}
+
+section{
+  background:white;
+  padding:20px;
+  border-radius:10px;
+  box-shadow:0 2px 10px gray;
+}
+
+.project-card{
+  background:#e8f0ff;
+  padding:15px;
+  margin-top:10px;
+  border-radius:10px;
+}
+
+button{
+  background:#0066ff;
+  color:white;
+  border:none;
+  padding:10px;
+  border-radius:5px;
+}
+
+@media(max-width:768px){
+  .container{
+    grid-template-columns:1fr;
+  }
+
+  nav{
+    flex-direction:column;
+    align-items:center;
+  }
+}
